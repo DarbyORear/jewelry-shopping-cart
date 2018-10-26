@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+  </head>
+
+  <body>
+    <h2>Gemtones and Earth Tones</h2>
+
+    <table class = "table table-dark">
+      <tr>
+        <th class = col1>Product</th>
+        <th>Photo</th>
+        <th>Price</th>
+        <th id = "purchase">Purchase</th>
+      </tr>
+      <tr class = "productDetails" id = "productOne">
+        <td id= "necklaceItem">Necklace</td>
+        <td><img src = "images/IMG2.JPG"></td>
+        <td class = "itemprice" id = "necklacePrice">$30.00</td> <!-- FIXME! changing to num to see if this works -->
+        <td><button class = "necklace" id = "necklaceButton" onclick = "addNecklaceToCart()">Add</button></td>
+      </tr>
+      <tr class = "productDetails" id = "productTwo">
+        <td id = "braceletItem">Bracelet</td>
+        <td><img src = "images/IMG3.jpg"></td>
+        <td class = "itemprice"  id = "braceletPrice">$20.00</td>
+        <td><button class = "bracelet" id = "braceletButton" onclick = "addBraceletToCart()">Add</button></td>
+      </tr>
+      <tr class = "productDetails" id = "productThree">
+        <td id= "earringsItem">Earrings</td>
+        <td><img src = "images/IMG4.JPG"></td>
+        <td class = "itemprice" id = "earringsPrice">$15.00</td>
+        <td><button id = "earringsButton" onclick = "addEarringsToCart();">Add</button></td>
+      </tr>
+
+      <tr class = "productDetails" id = "productFour">
+        <td id = "ankletItem">Anklet</td>
+        <td><img src = "images/IMG5.JPG"></td>
+        <td class = "itemprice"  id = "ankletPrice">$20.00</td>
+        <td><button id = "ankletButton" onclick = "addAnkletToCart();" >Add</button></td>
+      </tr>
+
+      <tr class = "productDetails" id = "productFive">
+        <td id = "toeRingItem">Toe Ring</td>
+        <td><img src = "images/IMG1.JPG"></td>
+        <td class = "itemprice" id = "toeRingPrice">$10.00</td>
+        <td><button id = "toeRingButton" onclick = "addToeRingToCart()">Add</button></td>
+      </tr>
+    </table>
+    <button id = "checkOut" onclick = "displayShoppingCart()">Check Out</button>
+    <!-- 10/26/18: i want to add a clear cart button
+    <button id = "clearCart" onclick = "clearCart()">Clear Cart</button>-->
+    <p id= "display"></p>
+    <script src = "script.js"></script>
+  </body>
+</html>
