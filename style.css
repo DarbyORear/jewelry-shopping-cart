@@ -1,16 +1,13 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
-body {
-  background-color: #00e68a
-;
+/*body {
+  background-color: #00e68a;
   font-family: "Open Sans", sans-serif;
   padding: 5px 25px;
   font-size: 18px;
   margin: 0;
   color: #444;
-}
+  }*/
 
 /*table, th, td{
   border: 1px black solid;
@@ -19,37 +16,64 @@ body {
 }*/
 
 
-
-
-
-
-
-button{
-  margin-left: 100px
-}
-
 body {
+  background-color: #00e68a;
   font-family: Kurale;
 }
 
 h2{
-  margin-left: 1.66%;
+  font-size: 50px;
+}
+
+h5{
+  color: red;
+  text-align: center;
+  font-family: Ariel;
+  margin-top: 1%;
 }
 
 img {
   height: 150px;
   width: 150px;
-  text-align: left;
-  float: left;
+/*  text-align: left;
+*/float: left;
+  margin:2%;
 }
 
+.jumbotron{
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#itemsContainer{
+ /* margin-left: 5%;
+  margin-right: 5%;*/
+/*  margin: 5%;
+*/  text-align: center;
+ /*   margin-left: 135px;*/
+
+}
+
+.row{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /*margin: 5%;*/
+}
 
 .productDetails {
   background-color: white;
-  width: 45%;
-  height: 45%;
-  margin: 1.66%;
-  float: left;
+  width: 350px;
+  height: 225px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 1%;
+  padding-top: 5px;
+/*  font-weight: bold;
+*/  font-size: 1.1em;
 }
 
 .productSection{
@@ -57,5 +81,5 @@ img {
 }
 
 #checkOut {
-  margin: 25%;
+  margin: 5%;
 }
